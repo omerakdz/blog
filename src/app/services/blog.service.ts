@@ -30,18 +30,19 @@ export class BlogService {
       date: new Date('2026-02-23'),
       content: 'This is the content of my fourth blog post.',
     },
-    {
-      id: 5,
-      title: 'Vijfde week van mijn stage',
-      date: new Date('2026-03-01'),
-      content: 'This is the content of my fifth blog post.',
-    },
-    {
-      id: 6,
-      title: 'Zesde week van mijn stage',
-      date: new Date('2026-03-08'),
-      content: 'This is the content of my sixth blog post.',
-    },
+    // {
+    //   id: 5,
+    //   title: 'Vijfde week van mijn stage',
+    //   date: new Date('2026-03-01'),
+    //   content: 'This is the content of my fifth blog post.',
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Zesde week van mijn stage',
+    //   date: new Date('2026-03-08'),
+    //   content:
+    //     'This is the content of my sixth blog post.',
+    // },
   ];
 
   constructor() {}
@@ -63,5 +64,12 @@ export class BlogService {
     }
 
     return latest;
+  }
+
+  getPreviewContent() {
+    let post = this.getLatestPosts();
+    let splittedPost = post.content.split(' ');
+
+    return splittedPost.slice(0, 15).join(' ');
   }
 }

@@ -1,0 +1,38 @@
+<div class="min-h-screen bg-gray-50">
+  <!-- Header Section -->
+  <section class="bg-gradient-to-br from-[#667eea] to-[#764ba2] text-white text-center py-16 px-8">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Mijn Blogs</h1>
+      <p class="text-xl md:text-2xl opacity-90">Alle updates over mijn stageperiode</p>
+    </div>
+  </section>
+
+  <!-- Blog Posts Section -->
+  <section class="py-16 px-8 max-w-5xl mx-auto">
+    @if (posts.length > 0) {
+      <div class="space-y-8">
+        @for (post of posts; track post.id) {
+          <article
+            class="bg-white rounded-xl shadow-lg p-8 transition-all duration-200 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div class="mb-4">
+              <h2 class="text-3xl font-bold text-gray-800 mb-2">
+                {{ post.title }}
+              </h2>
+              <p class="text-gray-500 text-sm">
+                {{ post.date | date: 'dd MMMM yyyy' }}
+              </p>
+            </div>
+            <div class="text-gray-700 text-lg leading-relaxed">
+              <p>{{ post.content }}</p>
+            </div>
+          </article>
+        }
+      </div>
+    } @else {
+      <div class="text-center py-16">
+        <p class="text-xl text-gray-600">Geen blogposts beschikbaar.</p>
+      </div>
+    }
+  </section>
+</div>
