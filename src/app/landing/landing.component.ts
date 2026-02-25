@@ -17,7 +17,7 @@ export class LandingComponent implements OnInit {
   constructor(private blogService: BlogService) {}
 
   ngOnInit(): void {
-    this.latestPost = this.blogService.getLatestPosts();
+    this.latestPost = this.blogService.getPostByCurrentWeek();
     this.previewPost = this.blogService.getPreviewContent();
   }
 }
