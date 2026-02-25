@@ -80,7 +80,7 @@ export class BlogService {
   getPostByCurrentWeek() {
     let today: Date = new Date();
     let filteredPosts = this.posts.filter((p) => p.date < today);
-    let lastIndex = filteredPosts.length - 1;
+    let lastIndex = filteredPosts.length - 2;
     let currentPost = filteredPosts[lastIndex];
 
     return currentPost;
@@ -89,7 +89,7 @@ export class BlogService {
   getAllPostsTillCurrentWeek() {
     let today: Date = new Date();
     let filteredPosts = this.posts.filter((p) => p.date < today);
-
-    return filteredPosts;
+    let currentPost = filteredPosts.slice(0, filteredPosts.length - 1);
+    return currentPost;
   }
 }
