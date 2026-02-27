@@ -1,17 +1,44 @@
 <div class="min-h-screen bg-gray-50">
-  <!-- Header Section -->
-  <section class="bg-gradient-to-br from-[#667eea] to-[#764ba2] text-white text-center py-16 px-8">
+  <section class="bg-gradient-to-br from-[#b6b6b8] to-[#764ba2] text-white text-center py-16 px-8">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-5xl md:text-6xl font-bold mb-4">Mijn Blogs</h1>
       <p class="text-xl md:text-2xl opacity-90">Alle updates over mijn stageperiode</p>
     </div>
   </section>
 
-  <!-- Blog Posts Section -->
+  <form
+    class="w-4/8 mx-auto mt-8 bg-gradient-to-br from-[#b6b6b8] to-[#764ba2] p-6 rounded-xl text-white flex flex-row gap-4 shadow-lg"
+  >
+    <input
+      [(ngModel)]="searchTerm"
+      name="search"
+      (ngModelChange)="onSearch()"
+      type="search"
+      placeholder="zoekveld om angular te oefenen"
+      class="p-3 rounded-md bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-300 w-2xl"
+    />
+
+    <button
+      type="button"
+      (click)="onSearch()"
+      class="bg-white text-purple-800 font-semibold py-2 rounded-md hover:bg-gray-200 transition w-1/7 cursor-pointer"
+    >
+      zoeken
+    </button>
+
+    <button
+      type="button"
+      (click)="resetPosts()"
+      class="bg-white text-purple-800 font-semibold py-2 rounded-md hover:bg-gray-200 transition w-1/7 cursor-pointer"
+    >
+      reset
+    </button>
+  </form>
+
   <section class="py-16 px-8 max-w-5xl mx-auto">
-    @if (posts.length > 0) {
+    @if (filteredPosts.length > 0) {
       <div class="space-y-8">
-        @for (post of posts; track post.id) {
+        @for (post of filteredPosts; track post.id) {
           <article
             class="bg-white rounded-xl shadow-lg p-8 transition-all duration-200 hover:shadow-xl hover:-translate-y-1"
           >
