@@ -37,11 +37,13 @@ export class BlogService {
     },
     {
       id: 5,
-      title: 'Afmaken van database schema',
+      title: 'Afmaken van database schema + Moving forward',
       date: new Date('2026-03-01'),
       content:
-        'We zijn de week begonnen met een meeting waar we weer de database schema hebben besproken, dankzij de hulp van Dimitri hebben we goede aanpassingen kunnen maken. Volgens de collegas zijn we ook heel dichtbij het eindresultaat.',
+        'We zijn de week begonnen met een meeting waar we weer de database schema hebben besproken, dankzij de hulp van Dimitri hebben we goede aanpassingen kunnen maken. Volgens de collegas zijn we ook heel dichtbij het eindresultaat. Woensag ben ik naar moving forward geweest, een event waar verschillende bedrijven zich presenteren aan studenten. Ik heb hier veel interessante gesprekken gehad en ook mijn zorgen verteld, zoals hoe ik werk ga kunnen vinden in deze sector met AI etc. . Donderdag ben ik begonnen aan een oefening over het maken van een API in C# ASP.NET.',
+      images: ['assets/moving_forward.jpg'],
     },
+
     {
       id: 6,
       title: 'Zesde week van mijn stage',
