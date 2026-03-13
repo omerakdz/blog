@@ -40,15 +40,16 @@ export class BlogService {
       title: 'Afmaken van database schema + Moving forward',
       date: new Date('2026-03-01'),
       content:
-        'We zijn de week begonnen met een meeting waar we weer de database schema hebben besproken, dankzij de hulp van Dimitri hebben we goede aanpassingen kunnen maken. Volgens de collegas zijn we ook heel dichtbij het eindresultaat. Woensag ben ik naar moving forward geweest, een event waar verschillende bedrijven zich presenteren aan studenten. Ik heb hier veel interessante gesprekken gehad en ook mijn zorgen verteld, zoals hoe ik werk ga kunnen vinden in deze sector met AI etc. . Donderdag ben ik begonnen aan een oefening over het maken van een API in C# ASP.NET.',
+        'We zijn de week begonnen met een meeting waar we weer de database schema hebben besproken, dankzij de hulp van Dimitri hebben we goede aanpassingen kunnen maken. Volgens de collegas zijn we ook heel dichtbij het eindresultaat. Woensag ben ik naar moving forward geweest, een event waar verschillende bedrijven zich presenteren aan studenten. Ik heb hier veel interessante gesprekken gehad en ook mijn zorgen verteld, zoals hoe ik werk ga kunnen vinden in deze sector met AI etc. . ',
       images: ['assets/moving_forward.jpg'],
     },
 
     {
       id: 6,
-      title: 'Zesde week van mijn stage',
+      title: 'Frontend + backend beginnen',
       date: new Date('2026-03-08'),
-      content: 'This is the content of my sixth blog post.',
+      content:
+        'Dit week zijn we eindelijk begonnen aan de frondend en backend na een lange tijd van bugs fixen en problemen. Er zijn hier en daar nog was issues zoals dat de login in een loop blijft waardoor we moeilijk progress kunnen maken. We hebben al tabellen aangemaakt in de database met mockdata. Ook hebben we controllers en models etc toegevoegd aan de backend, en hebben we ook de backend aan de frontend gekoppeld door de mockdata te tonen in een tabel als test.',
     },
   ];
 
