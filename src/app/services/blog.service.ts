@@ -38,7 +38,7 @@ export class BlogService {
     {
       id: 5,
       title: 'Afmaken van database schema + Moving forward',
-      date: new Date('2026-03-01'),
+      date: new Date('2026-03-02'),
       content:
         'We zijn de week begonnen met een meeting waar we weer de database schema hebben besproken, dankzij de hulp van Dimitri hebben we goede aanpassingen kunnen maken. Volgens de collegas zijn we ook heel dichtbij het eindresultaat. Woensag ben ik naar moving forward geweest, een event waar verschillende bedrijven zich presenteren aan studenten. Ik heb hier veel interessante gesprekken gehad en ook mijn zorgen verteld, zoals hoe ik werk ga kunnen vinden in deze sector met AI etc. . ',
       images: ['assets/moving_forward.jpg'],
@@ -47,10 +47,23 @@ export class BlogService {
     {
       id: 6,
       title: 'Frontend + backend beginnen',
-      date: new Date('2026-03-08'),
+      date: new Date('2026-03-09'),
       content:
         'Dit week zijn we eindelijk begonnen aan de frondend en backend na een lange tijd van bugs fixen en problemen. Er zijn hier en daar nog was issues zoals dat de login in een loop blijft waardoor we moeilijk progress kunnen maken. We hebben al tabellen aangemaakt in de database met mockdata. Ook hebben we controllers en models etc toegevoegd aan de backend, en hebben we ook de backend aan de frontend gekoppeld door de mockdata te tonen in een tabel als test.',
     },
+    {
+      id: 7,
+      title: 'Frontend + backend verder ontwikkelen',
+      date: new Date('2026-03-23'),
+      content:
+        'We hebben over de tabellen gesproken die in de frontend werden getoond, John had een aantal aanpassingen voorgesteld aan die tabellen + aan de database. We hebben de database schema aangepast en met EF core de database geupdate en gelinked. Ook hebben we ons bezig gehouden met bugs fixen. Verder waren we klaar met alles, nu is het wachten op onze mentoren tot ze een applicatie bouwen waar we onze lokale tabellen in de database met elkaar kunenn koppelen.',
+    },
+    // {
+    //   id: 8,
+    //   title: '/',
+    //   date: new Date('2026-03-16'),
+    //   content: '/',
+    // },
   ];
 
   constructor() {}
@@ -93,7 +106,6 @@ export class BlogService {
   getAllPostsTillCurrentWeek() {
     let today: Date = new Date();
     let filteredPosts = this.posts.filter((p) => p.date < today);
-    let currentPost = filteredPosts.slice(0, filteredPosts.length - 1);
-    return currentPost;
+    return filteredPosts;
   }
 }
