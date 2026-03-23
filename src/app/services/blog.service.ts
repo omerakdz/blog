@@ -54,14 +54,14 @@ export class BlogService {
     {
       id: 7,
       title: 'Frontend + backend verder ontwikkelen',
-      date: new Date('2026-03-23'),
+      date: new Date('2026-03-16'),
       content:
         'We hebben over de tabellen gesproken die in de frontend werden getoond, John had een aantal aanpassingen voorgesteld aan die tabellen + aan de database. We hebben de database schema aangepast en met EF core de database geupdate en gelinked. Ook hebben we ons bezig gehouden met bugs fixen. Verder waren we klaar met alles, nu is het wachten op onze mentoren tot ze een applicatie bouwen waar we onze lokale tabellen in de database met elkaar kunenn koppelen.',
     },
     // {
     //   id: 8,
     //   title: '/',
-    //   date: new Date('2026-03-16'),
+    //   date: new Date('2026-03-23'),
     //   content: '/',
     // },
   ];
