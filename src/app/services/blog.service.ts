@@ -65,6 +65,13 @@ export class BlogService {
       content:
         'We hebben de backend aangepast en werken met een andere werkwijze. Verder was het vooral debuggen en problemen oplossen door de aanpassingen. Hier en daar hebben we ook nog visueel wat aangepast aan de frontend.',
     },
+    {
+      id: 9,
+      title: 'Frontend en backend verder ontwikkelen',
+      date: new Date('2026-03-30'),
+      content:
+        'Dit week zijn we vooral bezig geweest met het maken van mock paginas en navigatie voor de frontend, en het verder ontwikkelen van de backend. Verder hebben we een meeting waar de mentor de backend veranderingen nakeek en feedback gaf. Verder waren we gewoon bezig met bugs fixen en problemen oplossen.',
+    },
   ];
 
   constructor() {}
