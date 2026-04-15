@@ -74,10 +74,10 @@ export class BlogService {
     },
     {
       id: 10,
-      title: 'Frontend en backend verder ontwikkelen',
+      title: 'Mock paginas aanpassen',
       date: new Date('2026-04-06'),
       content:
-        'Dit week hebben we heel de week thuis gewerkt vanwege de paasvakantie, we hebben vooral gewerkt aan het verder ontwikkelen van de frontend en backend. We hebben een aantal mock paginas gemaakt en de navigatie verbeterd.',
+        'We hebben deze week vooral gewerkt aan het aanpassen van de mock paginas en navigatie. We hebben een aantal aanpassingen gemaakt aan de mock paginas',
     },
     {
       id: 11,
