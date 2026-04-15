@@ -72,6 +72,20 @@ export class BlogService {
       content:
         'Dit week zijn we vooral bezig geweest met het maken van mock paginas en navigatie voor de frontend, en het verder ontwikkelen van de backend. Verder hebben we een meeting waar de mentor de backend veranderingen nakeek en feedback gaf. Verder waren we gewoon bezig met bugs fixen en problemen oplossen.',
     },
+    {
+      id: 10,
+      title: 'Frontend en backend verder ontwikkelen',
+      date: new Date('2026-04-06'),
+      content:
+        'Dit week hebben we heel de week thuis gewerkt vanwege de paasvakantie, we hebben vooral gewerkt aan het verder ontwikkelen van de frontend en backend. We hebben een aantal mock paginas gemaakt en de navigatie verbeterd.',
+    },
+    {
+      id: 11,
+      title: 'Frontend en backend verder ontwikkelen',
+      date: new Date('2026-04-13'),
+      content:
+        'We zijn de week begonnen met een kleine meeting waar we de voortgang van de frontend en backend hebben besproken. We hebben een aantal aanpassingen gemaakt aan de frontend, zoals het verbeteren van de navigatie en het toevoegen van een aantal mock paginas.',
+    },
   ];
 
   constructor() {}
