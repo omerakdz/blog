@@ -86,6 +86,13 @@ export class BlogService {
       content:
         'We zijn de week begonnen met een kleine meeting waar we de voortgang van de frontend en backend hebben besproken. We hebben een aantal aanpassingen gemaakt aan de frontend, zoals het verbeteren van de navigatie en het toevoegen van een aantal mock paginas.',
     },
+    {
+      id: 12,
+      title: 'Eerste push naar staging',
+      date: new Date('2026-04-20'),
+      content:
+        'Tijdens de meeting op maandag hebben we besproken met de mentor wat ik allemaal moest maken/aanpassen voor de eerste push naar staging. Na een tijdje bezig zijn heb ik voor feedback gevraagd. Daarna heb ik mijn gedeelte gepushed naar de staging, nu is het nog wachten op een nieuwe feedback. Ik moest een Diploma pagina maken waar de admin alle diplomas kon zien, aanpassen, verwijderen en updaten.',
+    },
   ];
 
   constructor() {}
