@@ -93,6 +93,20 @@ export class BlogService {
       content:
         'Tijdens de meeting op maandag hebben we besproken met de mentor wat ik allemaal moest maken/aanpassen voor de eerste push naar staging. Na een tijdje bezig zijn heb ik voor feedback gevraagd. Daarna heb ik mijn gedeelte gepushed naar de staging, nu is het nog wachten op een nieuwe feedback. Ik moest een Diploma pagina maken waar de admin alle diplomas kon zien, aanpassen, verwijderen en updaten.',
     },
+    {
+      id: 13,
+      title: 'Feedback verwerken en verder ontwikkelen',
+      date: new Date('2026-04-27'),
+      content:
+        'We hebben deze week vooral gewerkt aan het verwerken van de feedback die we kregen van de mentor. We hebben een aantal aanpassingen gemaakt aan de frontend en backend.',
+    },
+    {
+      id: 14,
+      title: 'Frontend en backend verder ontwikkelen',
+      date: new Date('2026-05-04'),
+      content:
+        'We zijn nog steeds bezig met verwerken van feedback maar er is vooruitgang. We hebben een aantal aanpassingen gemaakt aan de frontend en backend, en we zijn nu bezig met het maken van een aantal nieuwe features. We zijn ook al  begonnen met het maken van een aantal paginas voor de gebruikers.',
+    },
   ];
 
   constructor() {}
