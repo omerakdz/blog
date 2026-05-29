@@ -107,6 +107,27 @@ export class BlogService {
       content:
         'We zijn nog steeds bezig met verwerken van feedback maar er is vooruitgang. We hebben een aantal aanpassingen gemaakt aan de frontend en backend, en we zijn nu bezig met het maken van een aantal nieuwe features. We zijn ook al  begonnen met het maken van een aantal paginas voor de gebruikers.',
     },
+    {
+      id: 15,
+      title: 'Toevoegen extra features admin paginas + database reset',
+      date: new Date('2026-05-11'),
+      content:
+        'We hebben deze week vooral gewerkt aan het toevoegen van extra features aan de admin paginas, zoals het toevoegen van een delete knop en een update knop, ook een button waar je diplomas kon activeren/deactiveren. Verder hebben we ook een database reset gedaan, waardoor we nu weer met een schone database werken.',
+    },
+    {
+      id: 16,
+      title: 'Feedback verwerken',
+      date: new Date('2026-05-18'),
+      content:
+        'We hebben deze week vooral gewerkt aan het verwerken van de feedback die we kregen van de mentor. We hebben een aantal aanpassingen gemaakt aan de frontend en backend, en we zijn nu bezig met het maken van een aantal nieuwe features. We zijn ook al begonnen met het maken van een aantal paginas voor de gebruikers.',
+    },
+    {
+      id: 17,
+      title: 'Public paginas maken',
+      date: new Date('2026-05-25'),
+      content:
+        'We hebben deze week vooral gewerkt aan het maken van de public paginas voor de gebruikers. Zo hebben we al een vacature pagina gemaakt waar gebruikers alle vacatures kunnen zien, en een pagina waar gebruikers hun eigen diplomas kunnen zien.',
+    },
   ];
 
   constructor() {}
